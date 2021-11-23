@@ -1,25 +1,36 @@
-import { Injectable } from "@angular/core";
-import { CartItem } from "app/restaurante-detalhe/shopping-cart/cart-item.model";
-import { ShoppingCartService } from "app/restaurante-detalhe/shopping-cart/shopping-cart.service";
+import {
+  Injectable
+} from "@angular/core";
+import {
+  CartItem
+} from "app/restaurante-detalhe/shopping-cart/cart-item.model";
+import {
+  ShoppingCartService
+} from "app/restaurante-detalhe/shopping-cart/shopping-cart.service";
 
 @Injectable()
 export class OrderService {
-    constructor(private cartService: ShoppingCartService){}
 
-    cartItems(): CartItem[] {
-        return this.cartService.itens;
-    }
+  constructor(private cartService: ShoppingCartService) {}
 
-    increaseQty(item: CartItem){
-        this.cartService.increaseQty(item);
-    }
+  cartItems(): CartItem[] {
+    return this.cartService.itens;
+  }
 
-    decreaseQty(item: CartItem){
-        this.cartService.decreaseQty(item);
-    }
+  increaseQty(item: CartItem) {
+    this.cartService.increaseQty(item);
+  }
 
-    remove(item: CartItem){
-        this.cartService.removeItem(item);
-    }
+  decreaseQty(item: CartItem) {
+    this.cartService.decreaseQty(item);
+  }
+
+  remove(item: CartItem) {
+    this.cartService.removeItem(item);
+  }
+
+  itemsValue(): number {
+    return this.cartService.total();
+  }
 
 }
