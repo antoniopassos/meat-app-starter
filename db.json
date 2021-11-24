@@ -430,6 +430,19 @@
         }
       ],
       "id": 4
+    },
+    {
+      "address": "Avenida Ipiranga",
+      "number": "2000",
+      "optionalAddress": "Térreo",
+      "paymentOption": "DEB",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        }
+      ],
+      "id": 5
     }
   ]
 }
