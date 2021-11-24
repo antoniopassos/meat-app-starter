@@ -370,5 +370,32 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "address": "Avenida Paulita",
+      "number": "1000",
+      "optionalAddress": "Bela Vista",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "address": "Rua Arcipreste Ezequias",
+      "number": "1000",
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "zlasagna"
+        }
+      ],
+      "id": 2
+    }
+  ]
 }
