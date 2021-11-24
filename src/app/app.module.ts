@@ -19,7 +19,7 @@ import { MenuItemComponent } from './restaurante-detalhe/menu-item/menu-item.com
 import { ReviewsComponent } from './restaurante-detalhe/reviews/reviews.component';
 import { ShoppingCartService } from './restaurante-detalhe/shopping-cart/shopping-cart.service';
 import { OrderComponent } from './order/order.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InputContainerComponent } from './shared/input/input-container.component';
 import { RadioComponent } from './shared/radio/radio.component';
 import { OrderItemsComponent } from './order/order-items/order-items.component';
@@ -54,6 +54,7 @@ import { RatingComponent } from './rating/rating.component';
     BrowserModule,
     HttpModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [RestauranteService, ShoppingCartService, OrderService, {provide: LOCALE_ID, useValue: 'pt-BR'}],
