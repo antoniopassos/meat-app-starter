@@ -17,10 +17,7 @@ import { ShoppingCartComponent } from './restaurante-detalhe/shopping-cart/shopp
 import { MenuItemComponent } from './restaurante-detalhe/menu-item/menu-item.component';
 import { ReviewsComponent } from './restaurante-detalhe/reviews/reviews.component';
 import { ShoppingCartService } from './restaurante-detalhe/shopping-cart/shopping-cart.service';
-import { OrderComponent } from './order/order.component';
-import { OrderItemsComponent } from './order/order-items/order-items.component';
 import { OrderService } from './order/order.service';
-import { DeliveryCostsComponent } from './delivery-costs/delivery-costs.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { SharedModule } from './shared/shared.module';
 @NgModule({
@@ -35,9 +32,6 @@ import { SharedModule } from './shared/shared.module';
     ShoppingCartComponent,
     MenuItemComponent,
     ReviewsComponent,
-    OrderComponent,
-    OrderItemsComponent,
-    DeliveryCostsComponent,
     OrderSummaryComponent,
   ],
   imports: [

@@ -47,7 +47,7 @@ export const ROUTES: Routes = [{
   },
   {
     path: 'order',
-    component: OrderComponent
+    loadChildren: './order/order.module#OrderModule'
   },  
   {
     path: 'about',
