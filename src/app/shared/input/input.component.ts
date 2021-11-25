@@ -12,9 +12,9 @@ import {
 
 @Component({
   selector: 'mt-input-container',
-  templateUrl: './input-container.component.html'
+  templateUrl: './input.component.html'
 })
-export class InputContainerComponent implements OnInit, AfterContentInit {
+export class InputComponent implements OnInit, AfterContentInit {
 
   @Input() label: string;
   @Input() errorMessage: string;
