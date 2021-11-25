@@ -2,9 +2,6 @@ import {
   Routes
 } from "@angular/router";
 import {
-  AboutComponent
-} from "./about/about.component";
-import {
   HomeComponent
 } from "./home/home.component";
 import { OrderSummaryComponent } from "./order-summary/order-summary.component";
@@ -54,7 +51,7 @@ export const ROUTES: Routes = [{
   },  
   {
     path: 'about',
-    component: AboutComponent
+    loadChildren: './about/about.module#AboutModule'
   },
   {
     path: 'order-summary',
